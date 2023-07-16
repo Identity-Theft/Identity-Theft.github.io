@@ -16,25 +16,43 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="logo">
-			<img src="../icon.png">
-			<h1>Identity Theft</h1>
-			<nav class="links justify-content-center">
-			  <a role="button" class="btn btn-primary" href="https://discord.gg/HfqpZBeCQZ" target="_blank">Discord</a>
-			  <a role="button" class="btn btn-primary" href="https://twitter.com/IdentityTheft96" target="_blank">Twitter</a>
-			  <a role="button" class="btn btn-primary" href="https://github.com/Identity-Theft" target="_blank">Github</a>
-			  <a role="button" class="btn btn-primary" href="https://identifytheft.itch.io/" target="_blank">Itch.io</a>
-			</nav>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+		<div class="container">
+			<a class="navbar-brand" href="../"><img src="../icon.png" width="30" height="30">Identity Theft</a>
+			<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavId">
+				<ul class="navbar-nav me-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="../minecraft/">Minecraft</a>
+					</li>
 
-			<nav class="links justify-content-center">
-				<a role="button" class="btn btn-secondary" href="../minecraft/">Minecraft</a>
-				<a role="button" class="btn btn-secondary" href="../bots/">Discord Bots</a>
-				<a role="button" class="btn btn-secondary" href="./">Game Development</a>
-			</nav>
+					<li class="nav-item">
+						<a class="nav-link" href="../bots/">Discord Bots</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link active" href="./" aria-current="page">Game Development <span class="visually-hidden">(current)</span></a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Socials</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownId">
+							<a class="dropdown-item" href="https://discord.gg/HfqpZBeCQZ" target="_blank">Discord</a>
+							<a class="dropdown-item" href="https://twitter.com/IdentityTheft96" target="_blank">Twitter</a>
+							<a class="dropdown-item" href="https://github.com/Identity-Theft" target="_blank">Github</a>
+							<a class="dropdown-item" href="https://identifytheft.itch.io/" target="_blank">Itch.io</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
+	</nav>
 
-		<div id="bots" class="projects">
+    <div class="content">
+        <div id="bots" class="projects">
 			<h1 class="title">Game Development</h1>
 
 			<div class="mod" id="ohio">

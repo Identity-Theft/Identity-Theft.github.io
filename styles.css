@@ -1,6 +1,8 @@
-/* body {
-    background-color: slategrey;
-} */
+.navbar-brand img {
+    max-width: 30px;
+    border-radius: 0.375em;
+    margin-right: 0.5em;
+}
 
 .content {
     width: 50%;
@@ -14,14 +16,6 @@
     margin-right: auto;
     padding: 1em;
     text-align: center;
-}
-
-.logo .links {
-    margin-top: auto;
-    display: flex;
-    gap: 1em;
-    flex-wrap: wrap;
-    margin-bottom: 1em;
 }
 
 .logo img {
