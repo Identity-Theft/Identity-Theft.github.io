@@ -2,95 +2,60 @@
 <html lang="en">
 
 <head>
-	<title>Discord Bots - Identity Theft</title>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap CSS v5.2.1 -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-	<link href="../slate.css" rel="stylesheet">
-	<link href="../styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="../pico.css">
+	<link rel="stylesheet" href="../styles.css">
+
+	<title>Discord Bots - Identity Theft</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand" href="../"><img src="../icon.png" width="30" height="30" alt="logo">Identity Theft</a>
-			<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-				aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavId">
-				<ul class="navbar-nav me-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="../minecraft/">Minecraft</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link active" href="./" aria-current="page">Discord Bots <span class="visually-hidden">(current)</span></a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="../games/">Game Development</a>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Socials</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownId">
-							<a class="dropdown-item" href="https://discord.gg/HfqpZBeCQZ" target="_blank">Discord</a>
-							<a class="dropdown-item" href="https://twitter.com/IdentityTheft96" target="_blank">Twitter</a>
-							<a class="dropdown-item" href="https://github.com/Identity-Theft" target="_blank">Github</a>
-							<a class="dropdown-item" href="https://identifytheft.itch.io/" target="_blank">Itch.io</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
+	<nav class="container-fluid">
+		<ul>
+			<li><a href="../"><img src="../icon.png" alt="Logo" aria-hidden="true"></a></li>
+			<li>Identity Theft</li>
+		</ul>
+		<ul>
+			<li><a href="../minecraft/" class="secondary">Minecraft</a></li>
+			<li><a href="./" class="secondary">Discord Bots</a></li>
+			<li><a href="../games/" class="secondary">Game Development</a></li>
+		</ul>
 	</nav>
 	
-	<div class="content">
+	<main id="content" class="container">
 		<div id="bots" class="projects">
 			<h1 class="title">Discord Bots</h1>
-			<span class="badge bg-warning">Some GitHub repos are currently private</span>
 
-			<div class="mod" id="bean">
-				<img class="icon" src="./beanz.png" alt="Bleached">
-				<div class="info">
+			<article>
+				<img src="./beanz.png" alt="Bleached">
+				<div class="container-fluid">
 					<h2>Bean Bot</h2>
-					<p>Bean Bot is a general purpose Discord bot written in TypeScript using <a href="https://www.npmjs.com/package/discord.js">discord.js</a>.<br>Currently has several music and info commands.</p>
+					<p>Bean Bot is a general purpose Discord bot written in TypeScript using <a href="https://www.npmjs.com/package/discord.js">discord.js</a>.
+						<br>Currently has several music and info commands.</p>
 		
-					<div class="links">
-						<a class="btn btn-success" href="https://discord.com/api/oauth2/authorize?client_id=896036097514151967&permissions=412320385024&scope=applications.commands%20bot" role="button" target="_blank">Invite</a>
-						<a class="btn btn-primary" href="https://github.com/Identity-Theft/Bean-Bot-DiscordJS" role="button" target="_blank">Github</a>
+					<div>
+						<a href="https://discord.com/api/oauth2/authorize?client_id=896036097514151967&permissions=412320385024&scope=applications.commands%20bot" role="button" target="_blank">Invite</a>
+						<a href="https://github.com/Identity-Theft/Bean-Bot-DiscordJS" role="button" target="_blank">Github</a>
 					</div>
 				</div>
-			</div>
+			</article>
 
-			<div class="mod" id="pizza">
-				<img class="icon" src="./pizza.png" alt="Sculk Items">
-				<div class="info">
+			<article>
+				<img src="./pizza.png" alt="Sculk Items">
+				<div class="container-fluid">
 					<h2>Pizza Bot</h2>
 					<p>Order virtual pizzas and have them delivered straight to your Discord server.</p>
 		
-					<div class="links">
-						<a class="btn btn-success" href="https://discord.com/api/oauth2/authorize?client_id=1128578901426323557&permissions=412317239360&scope=applications.commands%20bot" role="button" target="_blank">Invite</a>
-						<a class="btn btn-primary disabled" href="https://github.com/Identity-Theft/Pizza-Bot" role="button" target="_blank">Github</a>
+					<div>
+						<a href="https://discord.com/api/oauth2/authorize?client_id=1128578901426323557&permissions=412317239360&scope=applications.commands%20bot" role="button" target="_blank">Invite</a>
+<!--						<a href="https://github.com/Identity-Theft/Pizza-Bot" role="button" target="_blank">Github</a>-->
 					</div>
 				</div>
-			</div>
+			</article>
 		</div>
-	</div>
-	
-	<!-- Bootstrap JavaScript Libraries -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-	integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-	</script>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-	integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-	</script>
+	</main>
 </body>
 
 </html>
