@@ -52,15 +52,7 @@ img {
 	position: relative;
 }
 
-.stripes_container {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: 0;
-	overflow: hidden;
-}
-
-.stripes_container .stripes {
+.dots {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -83,7 +75,7 @@ img {
 #home {
 	position: relative;
 	overflow: hidden;
-	background: radial-gradient(var(--color-yellow), rgb(235, 152, 0));
+	background: radial-gradient(var(--color-yellow), orange);
 }
 
 .star_pattern {
@@ -105,7 +97,7 @@ img {
 	width: 100%;
 	z-index: 1;
 	overflow: hidden;
-	background: radial-gradient(transparent, rgb(235, 152, 0));
+	background: radial-gradient(transparent, orange);
 }
 
 .home_container {
