@@ -38,28 +38,38 @@ img {
     border-style: none;
 }
 
-@keyframes pan {
-	0% {
-		transform: translate(0%, 0%);
-	}
-
-	100% {
-		transform: translate(50%, 0%);
-	}
-}
-
 .root {
 	position: relative;
 }
 
-.dots {
+.dots-red {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	z-index: 0;
 	overflow: hidden;
 
-	background-image: url("./assets/dot-pattern.svg");
+	background-image: url("./assets/dots-red.png");
+}
+
+.patches {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	overflow: hidden;
+
+	background-image: url("./assets/patches-blue.png");
+}
+
+.diamonds {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	overflow: hidden;
+
+	background-image: url("./assets/diamonds-blue.png");
 }
 
 .border {
@@ -75,52 +85,45 @@ img {
 #home {
 	position: relative;
 	overflow: hidden;
-	background: radial-gradient(var(--color-yellow), orange);
-}
-
-.star_pattern {
-	position: absolute;
-	height: 100%;
-	width: 200%;
-	left: -100%;
-	z-index: 0;
-	overflow: hidden;
-
-	background-image: url("./assets/star-pattern.svg");
-	background-size: 2%;
-	animation: pan 180s linear infinite;
-}
-
-.star_fade {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-	overflow: hidden;
-	background: radial-gradient(transparent, orange);
 }
 
 .home_container {
-	border-radius: 20px 80px;
+	border-radius: 80px 20px;
 	position: relative;
 	z-index: 2;
 
-	margin-top: 5em;
-	margin-bottom: 5em;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 7em auto 14em;
 	padding: 1em;
 	text-align: center;
-	background-color: var(--color-white);
-	max-width: 1000px;
+	background-color: var(--color-yellow);
+	max-width: 1200px;
 }
 
 .home_container h1 {
-	font-size: 2.3em;
+	display: inline-block;
+	padding-inline: 32px;
+	padding-block: 8px;
+	border-radius: 2em;
+	color: var(--color-accent-black);
+	background-color: var(--color-white);
 }
 
-.home_container .navbar a {
-	background-color: var(--color-yellow);
+.wave-card {
+	border-radius: 0 0 55px 15px;
+	left: 0;
+	bottom: -1px;
+	height: 300px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	will-change: left;
+}
+
+.wave-card svg {
+	display: block;
+	height: 120px;
+
 }
 
 .avatar {
@@ -158,23 +161,20 @@ img {
 	width: 100%;
 }
 
-#projects {
-	position: relative;
-}
-
 .project_container {
 	position: relative;
 	z-index: 1;
-    padding: 0.5em;
+	padding-bottom: 2em;
     display: flex;
     flex-direction: column;
     row-gap: 2em;
 }
 
-.content .title {
-	color: var(--color-yellow);
+.project_container .title {
+	color: var(--text-color);
 	text-align: center;
 	font-size: 3.625rem;
+	z-index: 1;
 }
 
 .projects .item {
@@ -183,8 +183,6 @@ img {
 	border-radius: var(--border-radius);
 	margin-bottom: 2em;
 	background-color: var(--color-yellow);
-	border-color: var(--color-white);
-	box-shadow: var(--shadow-x, 2px) var(--shadow-y, 4px) 0 2px var(--color-white);
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -195,7 +193,6 @@ img {
 }
 
 .projects .item .icon {
-	height: 256px;
 	width: 256px;
 	max-width: 30%;
 	height: max-content;
@@ -214,6 +211,7 @@ img {
 
 .projects .item .side {
 	margin: 0;
+	margin-left: 1em;
 	vertical-align: top; 
 	display: inline-flex;
 	flex-direction: column;
@@ -236,8 +234,8 @@ img {
 .projects .item .side .links, .home_container .navbar {
 	display: flex;
     flex-direction: row;
-	gap: 0.3em;
-	row-gap: 0.3em;
+	gap: 0.5em;
+	row-gap: 0.5em;
 	flex-wrap: wrap;
 }
 
@@ -251,26 +249,30 @@ img {
 	justify-content: center;
 }
 
+.star-icon {
+	width: 0.681em;
+	fill: var(--color-yellow);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .projects .item .side .links a, .home_container .navbar a {
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
 	align-items: center;
-	border-radius: 2em;
 	padding: 0.3em;
 	display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
-	width: 200px;
 	height: 30px;
 	transition: transform .1s ease-in-out;
 	transition-property: transform, box-shadow;
-}
-
-.projects .item .side .links a {
-	color: var(--color-accent-black);
-	background-color: var(--color-white);
+	width: fit-content;
+	border-radius: var(--border-radius);
+	color: var(--color-white);
+	background-color: var(--color-accent-pink);
 }
 
 
