@@ -12,11 +12,21 @@
 	--color-blue: #004081;
 	--color-white: #fff;
 	--border-radius: 15px;
+
+	--curseforge-gradient: linear-gradient(#2e140bff, #1e0c07ff);
+	--modrinth-gradient: linear-gradient(#072c13ff, #041c0bff);
+	--github-gradient: linear-gradient(#181f29ff, #0f131aff);
+	--itch-gradient: linear-gradient(#f93b3bff, #5c0303ff);
+	--youtube-gradient: linear-gradient(#300e0cff, #200908ff);
+	--twitch-gradient: linear-gradient(#1e142fff, #150e20ff);
+	--discord-gradient: linear-gradient(#1b1d31ff, #11121fff);
+	--bluesky-gradient: linear-gradient(#051f30ff, #031420ff);
+	--kofi-gradient: linear-gradient(#002634ff, #00161fff);
 }
 
 html, body {
 	color:var(--color-accent-black);
-	font-family:var(--font-body);
+	font-family: var(--font-body);
 	font-size: 1.25rem;
 	font-weight: 500;
 
@@ -50,6 +60,16 @@ img {
 	overflow: hidden;
 
 	background-image: url("./assets/dots-red.png");
+}
+
+.dots-white {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	overflow: hidden;
+
+	background-image: url("./assets/dots-white.png");
 }
 
 .patches {
@@ -207,11 +227,12 @@ img {
     height: 100%;
 	object-fit: cover;
     image-rendering: crisp-edges;
+
+	background-image: url("./assets/patches-white.png");
 }
 
 .projects .item .side {
-	margin: 0;
-	margin-left: 1em;
+	margin: 0 0 0 1em;
 	vertical-align: top; 
 	display: inline-flex;
 	flex-direction: column;
@@ -222,12 +243,12 @@ img {
 
 .projects .item .side h2 {
 	font-size: 1.8em;
-	margin: 0.1em 0px;
+	margin: 0.1em 0;
 	vertical-align: top;
 }
 
 .projects .item .side p {
-	margin: 0.3em 0px;
+	margin: 0.3em 0;
 	vertical-align: top;
 }
 
@@ -275,6 +296,10 @@ img {
 	background-color: var(--color-accent-pink);
 }
 
+.icon-button {
+	padding: 0 !important;
+	height: auto !important;
+}
 
 .projects .item .side .links a p, .home_container .navbar a p {
 	z-index: 2;
@@ -290,4 +315,20 @@ img {
 	--shadow-x: 1px;
 	--shadow-y: 1px;
 	transform: translate(2px, 4px);
+}
+
+.footer {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	/*row-gap: 2em;*/
+}
+
+.footer p {
+	font-weight: 300;
+	font-size: 0.75rem;
+	text-align: center;
+	z-index: 1;
 }
