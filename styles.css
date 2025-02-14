@@ -22,6 +22,10 @@
 	--discord-gradient: linear-gradient(#1b1d31ff, #11121fff);
 	--bluesky-gradient: linear-gradient(#051f30ff, #031420ff);
 	--kofi-gradient: linear-gradient(#002634ff, #00161fff);
+	--steam-gradient: linear-gradient(#0d1b31ff, #081320ff);
+
+	--fabric-gradient: linear-gradient(#2d2a24ff, #1e1c18ff);
+	--neo-gradient: linear-gradient(#251e17ff, #1b1610ff);
 }
 
 html, body {
@@ -150,6 +154,8 @@ img {
     height: 256px;
     width: auto;
 	border-radius: var(--border-radius);
+
+	background-image: url("./assets/patches-white.png");
 }
 
 .wave {
