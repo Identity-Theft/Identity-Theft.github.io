@@ -26,7 +26,7 @@
      inkscape:cy="32"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5" />
@@ -34,8 +34,11 @@
      width="56"
      height="56"
      fill="url(#a)"
-     rx="8.4"
-     id="rect1" />
+     rx="8.3999996"
+     id="rect1"
+     x="0"
+     y="0"
+     style="display:none" />
   <rect
      width="53.900002"
      height="53.900002"

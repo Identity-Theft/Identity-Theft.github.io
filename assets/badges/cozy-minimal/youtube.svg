@@ -26,29 +26,32 @@
      inkscape:cy="32"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5" />
   <rect
      width="56"
      height="56"
-     x=".011"
+     x="0.5"
      fill="url(#a)"
-     rx="8.4"
-     id="rect1" />
+     rx="8.3999996"
+     id="rect1"
+     style="display:none;fill:url(#a)"
+     y="0" />
   <g
      filter="url(#b)"
-     id="g1">
+     id="g1"
+     transform="translate(0.48949957)">
     <path
-       fill="#F22F21"
-       d="M39.703 13.714H16.318c-4.588 0-8.307 3.755-8.307 8.386v11.8c0 4.631 3.72 8.386 8.307 8.386h23.385c4.588 0 8.308-3.755 8.308-8.386V22.1c0-4.631-3.72-8.386-8.308-8.386m-5.618 14.86L23.147 33.84a.44.44 0 0 1-.628-.4V22.58a.44.44 0 0 1 .638-.396l10.937 5.595a.445.445 0 0 1-.009.795"
+       fill="#f22f21"
+       d="M 39.703,13.714 H 16.318 c -4.588,0 -8.307,3.755 -8.307,8.386 v 11.8 c 0,4.631 3.72,8.386 8.307,8.386 h 23.385 c 4.588,0 8.308,-3.755 8.308,-8.386 V 22.1 c 0,-4.631 -3.72,-8.386 -8.308,-8.386 m -5.618,14.86 -10.938,5.266 a 0.44,0.44 0 0 1 -0.628,-0.4 V 22.58 a 0.44,0.44 0 0 1 0.638,-0.396 l 10.937,5.595 a 0.445,0.445 0 0 1 -0.009,0.795"
        id="path1" />
   </g>
   <rect
      width="53.900002"
      height="53.900002"
-     x="1.061"
+     x="1.5499992"
      y="1.05"
      stroke="#ffffff"
      stroke-opacity="0.15"
@@ -64,7 +67,8 @@
        x2="28.011"
        y1="0"
        y2="56"
-       gradientUnits="userSpaceOnUse">
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.489)">
       <stop
          stop-color="#300E0C"
          id="stop2" />

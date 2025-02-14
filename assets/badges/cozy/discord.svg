@@ -21,12 +21,12 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="8.0937342"
-     inkscape:cx="109.65272"
-     inkscape:cy="31.938286"
+     inkscape:zoom="2.8615672"
+     inkscape:cx="81.948103"
+     inkscape:cy="53.292476"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg8" />
@@ -35,7 +35,10 @@
      height="56"
      fill="url(#a)"
      rx="8"
-     id="rect1" />
+     id="rect1"
+     x="0"
+     y="0"
+     style="display:none" />
   <g
      filter="url(#b)"
      id="g1">
