@@ -377,7 +377,7 @@ html, body {
 	background-size: cover;
 }
 
-.button {
+.button, .icon-button {
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
