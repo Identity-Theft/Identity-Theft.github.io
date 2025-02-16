@@ -350,7 +350,6 @@ html, body {
 	flex: 1 1 0;
 	z-index: 1;
 	max-width: calc(var(--card-width) - var(--card-padding));
-	/*overflow: hidden;*/
 }
 
 .card-grid .card .card-info .card-desc {
@@ -370,12 +369,15 @@ html, body {
 
 .star-icon {
 	width: 0.681em;
-	fill: var(--color-yellow);
-	padding-left: 10px;
-	padding-right: 10px;
+	height: 0.681em;
+	margin-left: 10px;
+	margin-right: 10px;
+
+	background: url("./assets/star-icon.svg");
+	background-size: cover;
 }
 
-.card-grid .card .card-info .links a, .home_container .navbar a {
+.button {
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
@@ -390,8 +392,32 @@ html, body {
 	transition-property: transform, box-shadow;
 	width: fit-content;
 	border-radius: var(--border-radius);
-	color: var(--color-white);
+	color: var(--color-white) !important;
 	background-color: var(--color-accent-pink);
+}
+
+@keyframes button_twinkle {
+	0%,
+	to {
+		transform:scale(1)
+	}
+	25% {
+		transform:scale(1.2)
+	}
+	75% {
+		transform:scale(.8)
+	}
+}
+.button:hover svg {
+	animation:button_twinkle 1s ease-in-out infinite;
+}
+
+.button:hover svg:last-child {
+	animation-delay: -0.5s;
+}
+
+.button:hover {
+	background-color: #ac2468;
 }
 
 .icon-button {
@@ -400,6 +426,7 @@ html, body {
 	width: var(--icon-button-size) !important;
 	background-size: cover;
 	background-image: var(--logo);
+	z-index: 2;
 }
 
 .card-grid .card .card-info .links a p, .home_container .navbar a p {
