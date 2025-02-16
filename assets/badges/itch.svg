@@ -34,11 +34,10 @@
      width="56"
      height="56"
      fill="url(#a)"
-     rx="8.3999996"
      id="rect1"
      x="0"
      y="0"
-     style="display:none" />
+     style="display:inline" />
   <rect
      width="53.900002"
      height="53.900002"

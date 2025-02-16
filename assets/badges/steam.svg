@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="65.143"
+   width="64"
    height="64"
    fill="none"
-   viewBox="0 0 57 56"
+   viewBox="0 0 55.999879 56"
    version="1.1"
    id="svg12"
    sodipodi:docname="steam.svg"
@@ -21,28 +21,28 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="3.1523438"
-     inkscape:cx="-75.340768"
-     inkscape:cy="38.542751"
+     inkscape:zoom="8.9161747"
+     inkscape:cx="23.608779"
+     inkscape:cy="28.543631"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg12" />
   <rect
      width="56"
      height="56"
-     x="0.5"
+     x="-6.1511993e-05"
      fill="url(#a)"
-     rx="8.3999996"
+     rx="0"
      id="rect1"
-     style="display:none;fill:url(#a)"
+     style="display:inline;fill:url(#a)"
      y="0" />
   <g
      filter="url(#b)"
      id="g2"
-     transform="translate(0.48949957)">
+     transform="translate(-0.01056194)">
     <path
        fill="url(#c)"
        d="M 8.827,33.751 C 11.3,41.991 18.947,48 27.998,48 39.051,48 48.011,39.045 48.011,28 48.011,16.955 39.05,8 27.998,8 17.392,8 8.714,16.245 8.028,26.67 c 1.297,2.173 1.8,3.518 0.798,7.08 z"
@@ -56,7 +56,7 @@
   <rect
      width="53.900002"
      height="53.900002"
-     x="1.5499992"
+     x="1.0499377"
      y="1.05"
      stroke="#ffffff"
      stroke-opacity="0.15"
@@ -73,7 +73,7 @@
        y1="0"
        y2="56"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(0.489)">
+       gradientTransform="translate(-0.01106151)">
       <stop
          stop-color="#0D1B31"
          id="stop2" />
@@ -119,8 +119,8 @@
     </linearGradient>
     <filter
        id="b"
-       width="51.429"
-       height="51.429"
+       width="51.429001"
+       height="51.429001"
        x="2.296"
        y="2.286"
        color-interpolation-filters="sRGB"
@@ -149,12 +149,14 @@
       <feBlend
          in2="BackgroundImageFix"
          result="effect1_dropShadow_28_3461"
-         id="feBlend11" />
+         id="feBlend11"
+         mode="normal" />
       <feBlend
          in="SourceGraphic"
          in2="effect1_dropShadow_28_3461"
          result="shape"
-         id="feBlend12" />
+         id="feBlend12"
+         mode="normal" />
     </filter>
   </defs>
 </svg>
